@@ -12,7 +12,7 @@
   height: 2em !important;
 }
 
-input[type=text] {
+.woocommerce-checkout-payment input[type=text] {
   box-sizing: border-box !important;
   font-size: inherit !important;
   width: 100% !important;
