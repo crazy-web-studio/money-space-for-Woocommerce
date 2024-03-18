@@ -18,7 +18,9 @@ define('MNS_API_URL_GETPAY', MNS_API_ENDPOINT . '/Getpay');
 define('MNS_API_URL_PAY', MNS_API_ENDPOINT . '/Pay');
 define('MNS_API_URL_V2_CREATE_PAYMENT', 'https://www.moneyspace.net/merchantapi/v2/createpayment/obj');
 define('MNS_API_URL_CREATE_INSTALLMENT', 'https://a.moneyspace.net/payment/Createinstallment/');
-define('MNS_LOGO', MNS_STATIC_URL_ENDPOINT . '/img/type/Master_VISA_JCB_UNION_180.png');
+// Changed to use local mns-logo.png in the same directory
+define('MNS_LOGO', plugin_dir_url(__FILE__) . 'mns-logo.png');
+//define('MNS_LOGO', MNS_STATIC_URL_ENDPOINT . '/img/type/Master_VISA_JCB_UNION_180.png');
 define('MNS_LOGO_QR', MNS_STATIC_URL_ENDPOINT. '/img/type/QRCode_160.png');
 define('MNS_LOGO_INSTALLMENT', MNS_STATIC_URL_ENDPOINT . '/img/type/Installment_220.png');
 define('MNS_PAYMENT_JS', plugins_url( "includes/moneyspace_payment.js", __FILE__ )); // MNS_STATIC_URL_ENDPOINT . '/moneyspace_payment.js'); //
