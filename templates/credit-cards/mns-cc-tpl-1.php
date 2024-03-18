@@ -23,7 +23,7 @@ function render_creditcard() {
                 </div>
                 <div class="form-group">
                     <label for="txtHolder"><?php _e(MNS_CC_NAME); ?> <abbr class="required" title="required">*</abbr></label>
-                    <input type="text" class="form-control" v-model="cardHolder" id="txtHolder" name="cardHolder" :required="validateCardHolder()" @keypress="checkCardName" placeholder="TONY ELSDEN">
+                    <input type="text" class="form-control" v-model="cardHolder" id="txtHolder" name="cardHolder" :required="validateCardHolder()" @keypress="checkCardName" placeholder="JOHN SMITH">
                 </div>
                 <div class="row">
                     <div class="col-md-6">
