@@ -31,7 +31,7 @@ function startTimer(duration) {
         var distance = countDownDate - now;
 
         if (countDownDate.getTime() <=  now) {
-            window.location="'.(get_site_url() . "/ms/cancel/" . $order_id).'", true;
+            window.location="'.(get_site_url() . "/ms/cancel/" . $order_id).'", true; 
             clearInterval(refreshId);
         } else {
             // Time calculations for days, hours, minutes and seconds

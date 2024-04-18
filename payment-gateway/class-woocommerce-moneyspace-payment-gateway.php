@@ -489,7 +489,7 @@ class MNS_Payment_Gateway extends WC_Payment_Gateway
 
         if($_POST["cardExpDateYear"] == "" && $data["payment_method"] == "moneyspace" && $data["ms_template_payment"] == "1")
             $errors->add( 'validation', __( 'Please input Card Exp Year.' ));
-    
+
         if($_POST["cardCVV"] == "" && $data["payment_method"] == "moneyspace" && $data["ms_template_payment"] == "1")
             $errors->add( 'validation', __( 'Please input Card CVV.' ));
     }
